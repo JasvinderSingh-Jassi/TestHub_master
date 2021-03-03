@@ -5,7 +5,7 @@ let Course_Page = require('../../Page Objects/Course_Page');
 describe("Assert Course selection",() =>
 {
   
-  var originalTimeout;
+  let originalTimeout;
 
   beforeEach(function() {
       originalTimeout = jasmine.DEFAULT_TIMEOUT_INTERVAL;
