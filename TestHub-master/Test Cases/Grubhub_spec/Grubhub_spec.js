@@ -58,7 +58,6 @@ it("Assert default sorting displayed",() =>{
     expect(content).toEqual("Default\nRating\nDistance\nDelivery Estimate\nDelivery Minimum\nDelivery Fee");
     })
     
- browser.sleep(8000);
 })
 
 
@@ -80,11 +79,10 @@ it("Assert on selecting Rating",() =>{
 
     //Click on Rating in the dropdown
     Grubhub_Page.Rating.click();
-    browser.sleep(5000);
 
     //Assert the resturant on applying rating filter
     expect(Grubhub_Page.Assert_Resturant_Search.getText()).toEqual("26 Restaurants");
-    browser.sleep(10000);
+  
 })
 
 it("Printing all name, time ,rating and cost",() =>{
@@ -103,7 +101,7 @@ it("Printing all name, time ,rating and cost",() =>{
    //Get text of all restaurant
    let text8= Grubhub_Page.Restaurant.getText();
    text8.then(data =>{
-   browser.sleep(3000);
+   
 
    //Print text of all restaurant
    console.log(data);
@@ -125,12 +123,10 @@ it("Sort Rating and print it",() =>{
 
     //Click on Rating in the dropdown
     Grubhub_Page.Rating.click();
-    browser.sleep(5000);
 
     //Get text of all restaurant
     let text4= Grubhub_Page.Restaurant.getText();
     text4.then(data =>{
-    browser.sleep(3000);
  
     //Print text of all restaurant
     console.log(data);
@@ -176,7 +172,6 @@ it("Print all resturant with free Delivery shown",() =>{
     //Get text of all restaurant
     let text4= Grubhub_Page.Restaurant.getText();
     text4.then(data =>{
-    browser.sleep(3000);
 
     //Print text of all restaurant
     console.log(data);
@@ -199,7 +194,6 @@ it("Print all the cusines shown",() =>{
     //Get text of all restaurant
     let text3= Grubhub_Page.Cuisine.getText();
     text3.then(data =>{
-    browser.sleep(3000);
 
     //Print text of all restaurant
     console.log(data);
@@ -220,7 +214,6 @@ it(" Assert all the resturent with less than 45 min is shown",() =>{
 
     //Click on 45min
     Grubhub_Page.slider.click();
-    browser.sleep(5000);
 
     //Assert the resturant on applying less than 45 min slider
     expect(Grubhub_Page.Assert_Resturant_Search.getText()).toEqual("26 Restaurants");
@@ -240,12 +233,10 @@ it(" Print all the resturent with less than 45 min is shown",() =>{
 
     //Click on 45min
     Grubhub_Page.slider.click();
-    browser.sleep(5000);
 
     //Get text of all restaurant
     let text4= Grubhub_Page.Restaurant.getText();
     text4.then(data =>{
-    browser.sleep(3000);
 
     //Print text of all restaurant
     console.log(data);
