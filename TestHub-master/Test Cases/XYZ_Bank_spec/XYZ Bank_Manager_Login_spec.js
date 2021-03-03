@@ -5,7 +5,7 @@ let XYZ_Bank_Page = require('../../Page Objects/XYZ_Bank_Page');
 describe("click XYZ Bank Manager login",() =>
 {
   
-  var originalTimeout;
+  let originalTimeout;
 
   beforeEach(function() {
       originalTimeout = jasmine.DEFAULT_TIMEOUT_INTERVAL;
