@@ -1,11 +1,11 @@
 //Accessing the variables from XYZ_Bank_Page.js
-var XYZ_Bank_Page = require('../../Page Objects/XYZ_Bank_Page');
+let XYZ_Bank_Page = require('../../Page Objects/XYZ_Bank_Page');
 
 
 describe("Functionality of XYZ Bank Customer login",() =>
 {
   
-  var originalTimeout;
+  let originalTimeout;
 
   beforeEach(function() {
       originalTimeout = jasmine.DEFAULT_TIMEOUT_INTERVAL;
