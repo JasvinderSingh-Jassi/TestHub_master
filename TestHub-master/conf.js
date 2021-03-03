@@ -1,4 +1,4 @@
-var HtmlReporter = require('protractor-beautiful-reporter');
+let HtmlReporter = require('protractor-beautiful-reporter');
 
 
 exports.config = {
