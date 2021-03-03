@@ -6,7 +6,7 @@ describe("Assert and functionality check of Journey Details",() =>
 {
 
 
-  var originalTimeout;
+  let originalTimeout;
 
   beforeEach(function() {
       originalTimeout = jasmine.DEFAULT_TIMEOUT_INTERVAL;
