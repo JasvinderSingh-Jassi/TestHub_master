@@ -5,7 +5,7 @@ describe("Assert and functionality check of navigation bar",() =>
 {
 
 
-  var originalTimeout;
+  let originalTimeout;
 
   beforeEach(function() {
       originalTimeout = jasmine.DEFAULT_TIMEOUT_INTERVAL;
