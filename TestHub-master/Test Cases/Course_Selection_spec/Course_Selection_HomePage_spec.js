@@ -5,7 +5,7 @@ describe("Assert Course selection home Page",() =>
 {
 
   
-  var originalTimeout;
+  let originalTimeout;
 
   beforeEach(function() {
       originalTimeout = jasmine.DEFAULT_TIMEOUT_INTERVAL;
