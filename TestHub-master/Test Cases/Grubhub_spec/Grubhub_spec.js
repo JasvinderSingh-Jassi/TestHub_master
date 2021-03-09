@@ -40,7 +40,7 @@ describe("Assert Grubhub application",() =>
     else {
 
     }
-    browser.sleep(5000);
+ 
   });
 
 
