@@ -9,11 +9,11 @@ let Grubhub_Page = function() {
 
 //Customize search on the basis of Street Address
 this.Search= element(by.css("input[name='searchTerm']"));
-this.FindFood= element(by.css('.s-btn'));
+this.FindFood= element.all(by.css('.s-btn')).first();
 
 //Perform assertion on dropdown
 this.Dropdown= element(by.id('ghs-select-sort'));
-this.Restaurant= element(by.css('.searchResults-wrapper'));
+this.Restaurant= element.all(by.css('.searchResults-wrapper')).first();
 
 //Assert for Rating
 this.Rating=element(by.cssContainingText('option', 'Rating'));
